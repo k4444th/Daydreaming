@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="Daydreaming"
+run/main_scene="uid://tsw37ieb18ws"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://assets/icon.svg"
+
+[autoload]
+
+Globals="*res://scripts/globals.gd"
