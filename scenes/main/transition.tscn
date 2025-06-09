@@ -1,10 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgievs46enekj"]
+[gd_scene load_steps=3 format=3 uid="uid://cgievs46enekj"]
 
 [ext_resource type="Script" uid="uid://bdkmywtjqvery" path="res://scripts/main/transition.gd" id="1_kw4dj"]
 
-[node name="Transition" type="Control"]
-layout_mode = 3
-anchors_preset = 0
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kw4dj"]
+bg_color = Color(0.6, 0.52549, 0.996078, 1)
+
+[node name="Transition" type="Node"]
 script = ExtResource("1_kw4dj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -17,3 +18,4 @@ anchor_bottom = 1.0
 offset_top = -27.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_styles/fill = SubResource("StyleBoxFlat_kw4dj")

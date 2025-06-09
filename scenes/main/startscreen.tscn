@@ -2,9 +2,7 @@
 
 [ext_resource type="Script" uid="uid://k5fb5a4aoorp" path="res://scripts/main/startscreen.gd" id="1_5pwm4"]
 
-[node name="Startscreen" type="Control"]
-layout_mode = 3
-anchors_preset = 0
+[node name="Startscreen" type="Node"]
 script = ExtResource("1_5pwm4")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

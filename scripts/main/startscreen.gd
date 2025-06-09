@@ -1,5 +1,4 @@
-extends Control
-
+extends Node
 
 func _on_button_pressed() -> void:
 	Globals.nextScene = "res://scenes/main/game.tscn"
