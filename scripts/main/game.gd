@@ -1,7 +1,5 @@
 extends Node
 
-var hasInteractedWithTestLines = false
-
 @onready var playerNode = $Player
 
 const testLines: Array[String] = [
@@ -11,6 +9,5 @@ const testLines: Array[String] = [
 ]
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("Interact") and !hasInteractedWithTestLines:
+	if Input.is_action_just_pressed("Interact"):
 		Dialogmanager.startDialog(testLines)
-		hasInteractedWithTestLines = true
